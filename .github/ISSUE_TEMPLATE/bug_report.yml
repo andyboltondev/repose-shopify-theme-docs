@@ -1,0 +1,52 @@
+name: Bug report
+description: Something in the theme does not behave the way the documentation says it should.
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Issues here are public. Please do not include order details, customer
+        information or admin credentials.
+  - type: input
+    id: version
+    attributes:
+      label: Theme version
+      description: Shown in Online Store > Themes, next to the theme name.
+      placeholder: "2.0.0"
+    validations:
+      required: true
+  - type: dropdown
+    id: preset
+    attributes:
+      label: Preset
+      options: [Repose, Selvedge, Nacre, "Not sure"]
+    validations:
+      required: true
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened
+      description: What you saw, and what you expected instead.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Go to ...
+        2. Click ...
+        3. The page ...
+    validations:
+      required: true
+  - type: input
+    id: url
+    attributes:
+      label: Storefront URL
+      description: A page where the problem is visible. Include the storefront password if the store is protected.
+  - type: dropdown
+    id: where
+    attributes:
+      label: Where does it happen
+      multiple: true
+      options: [Desktop, Mobile, Theme editor, Both desktop and mobile]

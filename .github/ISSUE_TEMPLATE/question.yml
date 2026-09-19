@@ -1,0 +1,21 @@
+name: Question
+description: Ask how to do something with the theme.
+labels: ["question"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Issues here are public. Please do not include order details, customer
+        information or admin credentials.
+  - type: textarea
+    id: question
+    attributes:
+      label: What are you trying to do
+      description: Describe the result you want, and what you have tried so far.
+    validations:
+      required: true
+  - type: input
+    id: url
+    attributes:
+      label: Storefront URL
+      description: Optional. Include the storefront password if the store is protected.
