@@ -12,7 +12,7 @@ body:
     attributes:
       label: Theme version
       description: Shown in Online Store > Themes, next to the theme name.
-      placeholder: "2.0.0"
+      placeholder: "0.0.1"
     validations:
       required: true
   - type: dropdown

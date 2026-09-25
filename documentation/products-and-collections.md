@@ -128,8 +128,9 @@ Some page types have more than one template available, giving you a
 different section layout for specific products, collections or pages
 without affecting the rest of your catalogue:
 
-- **Product**: the default template, or an **Editorial** template that adds
-  a flexible-blocks section for longer-form content below the buy box.
+- **Product**: the default template, or an **Editorial** template with a
+  leaner set of purchasing blocks and a portrait, loupe-zoom gallery, suited
+  to a photography-led product page rather than a heavily featured one.
 - **Collection**: the default template, or an **Editorial** template that
   adds an image-with-text story section above the product grid.
 - **Page**: several ready-made templates, including a landing page layout

@@ -184,7 +184,8 @@ Shopify's own customer account configuration provides in
 ## Gift cards
 
 The gift card template renders the Shopify-issued gift card page (the one a
-customer reaches from their order confirmation or gift card email), styled
-to match the theme, including the balance, redemption code and a printable
-version. There is nothing to configure here beyond the storewide theme
+customer reaches from their order confirmation or gift card email), showing
+the balance, a scannable QR code and the redemption code, styled to match
+the theme's colours and fonts. It's a standalone page with no header or
+footer, and there is nothing to configure here beyond the storewide theme
 settings.
