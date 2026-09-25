@@ -9,5 +9,6 @@ fixes alone.
 
 ## Unreleased
 
-Repose 2.0.0 is in development and has not been released. The first entry will
-appear here at launch.
+Repose has not been released yet. The current development version is 0.0.1,
+matching `theme_info.theme_version` in the theme's settings. This placeholder
+will be replaced with the first real entry at launch.
