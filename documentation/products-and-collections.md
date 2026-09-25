@@ -129,8 +129,10 @@ different section layout for specific products, collections or pages
 without affecting the rest of your catalogue:
 
 - **Product**: the default template, or an **Editorial** template with a
-  leaner set of purchasing blocks and a portrait, loupe-zoom gallery, suited
-  to a photography-led product page rather than a heavily featured one.
+  leaner set of purchasing blocks, suited to a photography-led product page.
+  Both use the same product section and gallery settings described above;
+  what's actually turned on for each is something you set, and can change,
+  in the theme editor.
 - **Collection**: the default template, or an **Editorial** template that
   adds an image-with-text story section above the product grid.
 - **Page**: several ready-made templates, including a landing page layout
