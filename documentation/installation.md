@@ -24,10 +24,8 @@ safe to try each one without losing any content you've already added.
 
 Pick whichever preset is closest to what you want and refine it from there
 using **Theme settings**, covered in the next page. There is no requirement
-to keep every setting a preset chose. If you'd like to see all three presets
-side by side before deciding, the **Theme demo grid** section (see
-[Sections and blocks](sections-and-blocks.md)) can link out to example
-storefronts running each one, where the theme's author has set that up.
+to keep every setting a preset chose. To see each preset with real content
+before deciding, open its demo store from the Theme Store listing.
 
 ## Setting up your storefront
 
@@ -45,6 +43,16 @@ With a preset chosen, a sensible order to work through is:
    catalogue, and look at the alternate templates if a specific product or
    collection needs a different layout. See
    [Products and collections](products-and-collections.md).
+
+## Languages
+
+Repose includes storefront translations for English, French, German, Italian
+and Spanish, and the theme editor's own labels in the same languages. Add and
+publish languages in **Settings > Languages**; the theme picks up the matching
+translation automatically. To change any wording, edit it in
+**Online Store > Themes > ... > Edit default theme content**. The footer's
+language selector appears once more than one language is published; see
+[Navigation and menus](navigation-and-menus.md#footer).
 
 ## Publishing
 

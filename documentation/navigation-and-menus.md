@@ -58,7 +58,9 @@ their cart:
 
 Both the drawer and minicart let customers adjust quantities and remove
 items without leaving the page, using Shopify's Section Rendering API, so
-updates happen without a full page reload. The full **Basket** page (used
+updates happen without a full page reload. They also suggest complementary
+products once you've set up pairings; see
+[Products and collections](products-and-collections.md#product-recommendations). The full **Basket** page (used
 when **Go to cart page** is selected, or reached via "view cart" from the
 drawer or minicart) has its own section with settings to show the vendor on
 each line item and to show an order note field. Accelerated checkout buttons

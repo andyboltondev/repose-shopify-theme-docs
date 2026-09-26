@@ -40,9 +40,11 @@ quality and load time:
 If a hero section has no image chosen yet, it falls back to a bundled
 placeholder image rather than showing an empty banner. Which one shows is
 controlled by the **Lifestyle fallback style** setting under
-[Theme settings > Brand](theme-settings.md#brand), with around 20 styles to
-choose from, each themed toward a different kind of store (home and
-interiors, clothing, jewellery, coffee and home fragrance, and so on). This
+[Theme settings > Brand](theme-settings.md#brand), with three styles to
+choose from: **Nordic** (home and interiors), **Classic** (heritage
+clothing) and **Elegant** (jewellery and gifting). Each hero also has its own
+**Use theme-style lifestyle image when blank** setting, so you can turn the
+fallback off for one hero without changing the others. This
 is meant as a placeholder while you're setting up, or a graceful fallback if
 a hero's image is ever removed, not a substitute for your own photography.
 As soon as you choose an image for a hero section, your image always takes
