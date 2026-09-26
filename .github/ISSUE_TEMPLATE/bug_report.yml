@@ -43,7 +43,7 @@ body:
     id: url
     attributes:
       label: Storefront URL
-      description: A page where the problem is visible. Include the storefront password if the store is protected.
+      description: A page where the problem is visible. Issues are public, so do not include the storefront password even if the store is protected — if we need it, we'll ask you privately.
   - type: dropdown
     id: where
     attributes:
