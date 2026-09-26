@@ -7,7 +7,7 @@ Repose uses semantic versioning: the first number changes when an update needs
 work from you after updating, the second when features are added, the third for
 fixes alone.
 
-## 1.0.0
+## 1.0.0 (2026-09-26)
 
 The first release of Repose.
 
