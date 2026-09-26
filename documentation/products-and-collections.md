@@ -81,6 +81,29 @@ and values in quotes. Matching is case-insensitive. Supported keywords are
 `is`, `not`, `and`, `or`. Use parentheses to combine `and` and `or` groups.
 Any image with no rules is shared by all variants and always shows.
 
+How the gallery treats your rules:
+
+- **Only the description reaches shoppers.** Everything before the `#` is
+  used as the image's alt text wherever the theme shows it: the product
+  gallery, product cards, the cart, search results and social sharing
+  previews. Screen readers never hear the rules. If there is no description
+  before the `#`, the product title is used instead.
+- **Don't use `#` in the description itself.** A `#` with a space before it
+  starts the rules block, so `size #2 mixing bowl` is read as a broken rule.
+  Write `size 2 mixing bowl` instead.
+- **`and` is checked before `or`.** `"Colour" is "Blue" or "Finish" is "Gloss"
+  and "Size" is "Large"` means blue, or glossy and large. Use parentheses when
+  you mean something else.
+- **Curly quotes work.** Quotes typed on a phone or pasted from a word
+  processor (`“Colour”`) are treated the same as straight ones.
+- **A rule with a mistake hides its image.** An unclosed quote, a missing
+  `is` or an unclosed parenthesis makes the rule invalid, and that image stays
+  hidden for every variant. Your browser's developer console shows a warning
+  naming the rule.
+- **The gallery never goes blank.** If a mistake means no image matches the
+  selected variant, the gallery shows every image rather than none, so
+  shoppers are never left without a picture.
+
 ### Ratings
 
 The **Rating** block reads the standard `reviews.rating` and
