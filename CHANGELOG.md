@@ -27,6 +27,12 @@ column, a sticky add to cart bar, a metafield-driven accordion for
 specifications, care and sizing, product ratings, a trust row, share buttons,
 app blocks, and an editorial product template for flagship products.
 
+**Colour swatches.** Colour, metal and similar options show as swatches on
+the product page and, optionally, on product cards and in filters. Swatches
+use Shopify's own swatch colour or image when you have set one, and otherwise
+the image of the variant each value selects, so no extra data entry is needed.
+Choose which options count as swatches and their shape in theme settings.
+
 **Variant media groups.** Choose which images show for which variant by
 adding a rule to an image's alt text, for example `#"Colour" is "Blue"`.
 Rules support `is`, `not`, `and`, `or` and parentheses, and the description
