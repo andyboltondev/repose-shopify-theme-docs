@@ -117,6 +117,19 @@ Product cards with more than one image show the second image when a shopper
 hovers over the card or moves keyboard focus to it, so a lifestyle or back view is one glance away. Put the
 image you want shown on hover second in the product's media list.
 
+## Swatches
+
+| Setting | What it does |
+| --- | --- |
+| Swatch option names | The option names shown as swatches, separated by commas. The default is `Colour, Color, Metal, Stone, Shade, Finish`. Matching ignores capitals and spaces. |
+| Swatch shape | Circle or square. |
+| Show swatches on product pages | Shows matching options as swatches in the variant picker. |
+| Show swatches on product cards | Shows up to five swatches under the product title on cards. |
+| Show swatches in filters | Shows swatches next to filter values that Shopify presents as swatches. |
+
+See [Colour swatches](products-and-collections.md#colour-swatches) for where
+each swatch's colour or image comes from.
+
 ## Motion
 
 | Setting | What it does |

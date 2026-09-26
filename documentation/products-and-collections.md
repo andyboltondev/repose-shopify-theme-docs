@@ -65,6 +65,32 @@ bar once the buy buttons block scrolls out of view, so the buy button is
 always reachable. This requires a buy buttons block to be present in the
 section; without one, there's nothing for it to track.
 
+### Colour swatches
+
+Options such as colour, metal or finish can show as swatches instead of text
+buttons. An option shows as swatches when its name is in **Theme settings >
+Swatches > Swatch option names**, or when Shopify already has swatch data for
+it.
+
+Each swatch takes its look from, in order:
+
+1. **The swatch set in Shopify admin.** If the option is linked to a colour
+   metafield (the category metafield Shopify offers for colour options), the
+   colour or pattern image you chose there is used.
+2. **The variant's image.** Otherwise the swatch shows the image of the
+   variant that value selects, so a product whose variants already have
+   images gets swatches with no extra setup. Assign each variant's image
+   under **Products > select product > the variant > image**.
+
+A value with neither shows as a text button, so nothing ever disappears.
+Swatches show no text of their own, so the option's label names the selected
+value (for example, "Colour: Charcoal"), and screen readers hear the value
+name.
+
+Filters show swatches when you set a filter's display to swatches in Shopify's
+Search & Discovery app, which requires the option to be linked to a colour
+metafield.
+
 ### Variant image grouping
 
 You can control which images appear for which variant by adding rules to an
