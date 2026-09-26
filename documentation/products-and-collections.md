@@ -9,6 +9,21 @@ buy buttons, description, collapsible rows (accordions), share links, a map,
 custom Liquid, and app blocks. Add, remove and reorder them from the theme
 editor to change the page's structure without touching code.
 
+A few blocks have settings worth knowing about:
+
+- **Buy buttons**: **Show dynamic checkout button** adds Shop Pay, Apple Pay
+  or another accelerated checkout button under add to cart, depending on the
+  payment methods you have enabled.
+- **Collapsible row**: a heading with either rich text or the content of a
+  page you choose, so shared text such as a delivery policy is written once
+  and reused on every product.
+- **Trust row**: up to four short reassurances (delivery, returns, guarantee,
+  secure checkout), each an icon and a line of text. Leave an item's text
+  blank to hide it.
+- **Variant picker**: shows each option's values as buttons. When the
+  chosen combination is sold out or doesn't exist, the add to cart button
+  says so instead of adding it.
+
 ### Gallery
 
 The product image gallery has its own settings, separate from the blocks
@@ -19,7 +34,7 @@ above:
 | Gallery media ratio | Adapt to the featured image, square, or portrait. |
 | Gallery media fit | Fit the entire media in frame, or fill the frame (cropping). |
 | Show gallery thumbnails | Toggles a thumbnail strip. |
-| Desktop thumbnail position | Below the main media, or beside it. |
+| Desktop thumbnail position | Below the main media, or beside it on the left. |
 | Show previous and next buttons | Arrow controls on the main image. |
 | Loop Shopify-hosted videos | Whether uploaded product videos loop automatically. |
 | Image zoom style | How a shopper gets a closer look. See below. |
@@ -116,34 +131,58 @@ rating shown on product cards throughout the store.
 
 ### Specification accordions
 
-The **Metafield accordion** theme block (added through a **Collapsible
-blocks** section, either on the product page's flexible-blocks section or
-elsewhere) builds an accordion of rows from product metafields, useful for
+The **Metafield accordion** theme block, added inside a **Flexible blocks**
+section (the default product template has one below the product
+information), builds an accordion from metafields, useful for
 specifications, care instructions or sizing details without retyping them
-into a rich text block. Each row can pull a single metafield value, or you
-can write static rich text instead. Rows with no value are hidden
-automatically unless you choose to show blank values, so an accordion built
-for products with varying metafields doesn't show empty rows. Styling
-(colours, borders, spacing, single or multiple rows open at once, horizontal
-or vertical layout, chevron or plus/minus icons) is fully configurable on
-the block.
+into a rich text block for every product. It is built in three levels:
+
+- **Metafield accordion**: the container. It holds the styling: an optional
+  header, whether one or several items can be open at once, vertical or
+  horizontal layout on larger screens, chevron or plus and minus icons,
+  sizes, padding, borders, and either the theme's colours or your own.
+- **Accordion item**: one collapsible panel, with a title and an option to
+  open it by default. Its **Display type** is either **Content**, one block
+  of rich text, or **Table**, a two-column list of labels and values built
+  from rows.
+- **Metafield row**: one label and value in a table item.
+
+Content and row values can each come from a **Dynamic source** (connect a
+metafield with the editor's dynamic source button, or type static text), or,
+for metafield types that can't be connected that way, from a **Metafield
+namespace and key** you type in. For a metafield that references a
+metaobject, enter the metaobject field to display (such as `name` or
+`title`) under **Metaobject display field**.
+
+Empty content hides automatically, so one accordion works across products
+with different metafields: a row with no value is hidden unless you turn on
+**Show blank table values**, and an item with nothing to show is hidden
+entirely.
 
 ### Pre-order and back-order labelling
 
-If a product's inventory continues selling after it reaches zero, Repose
-shows an "Out of stock", "Back order" or "Pre-order" badge automatically
-based on availability. Add the tag `pre-order`, `pre order` or `preorder` to
-a product to have oversold stock labelled as a pre-order rather than a back
-order.
+Repose labels stock automatically. Product cards show **Sold out** when
+nothing can be bought, **Sale** when a compare-at price is higher than the
+price, and **Back order** when a product is set to **Continue selling when
+out of stock** and has reached zero. The product page shows the same for the
+selected variant (**Out of stock** or **Back order**), updating as the
+shopper changes options. Add the tag `pre-order`, `pre order` or `preorder`
+to a product to have oversold stock labelled **Pre-order** rather than back
+order, in both places.
 
 ### Product recommendations
 
-A separate section, typically placed below the main product section. Choose
+A separate section, typically placed below the main product section, with
+a heading, the number of products to show and a grid size. Choose
 **Related products** (Shopify's automatic "customers also viewed"-style
 matching) or **Complementary products**, which uses pairings you curate
 per-product in Shopify's free Search & Discovery app. Complementary
 recommendations only appear once you've set up pairings there; until then,
 the section shows nothing for that product.
+
+The cart drawer, minicart and cart page also suggest up to four
+complementary products for the first item in the cart, from the same
+Search & Discovery pairings. With no pairings, nothing is shown.
 
 ## Alternate templates
 
@@ -158,9 +197,12 @@ without affecting the rest of your catalogue:
   in the theme editor.
 - **Collection**: the default template, or an **Editorial** template that
   adds an image-with-text story section above the product grid.
-- **Page**: several ready-made templates, including a landing page layout
-  (hero, featured collection, story, testimonials, newsletter) and an FAQ
-  layout (a collapsible-blocks section for questions and answers).
+- **Page**: ready-made **About**, **Landing** (hero, featured collection,
+  story, testimonials, newsletter), **FAQ** (a flexible blocks section with
+  a metafield accordion for questions and answers) and **Sitemap**
+  templates, alongside the default page template. The contact page uses the
+  **Contact form** section; see
+  [Sections and blocks](sections-and-blocks.md#contact-form).
 
 To use one, open the product, collection or page in Shopify admin, and in
 the **Theme template** panel on the right, choose the alternate template

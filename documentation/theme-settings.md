@@ -14,7 +14,7 @@ groups below, in the order they appear in the editor.
 | Favicon | The browser-tab icon, shown in light mode and in dark mode too if no dark favicon is set. |
 | Favicon (dark mode) | Optional dark-mode favicon. |
 | Default social sharing image | Used when a product, collection, article or page doesn't have its own image, for link previews on social media and messaging apps. |
-| Lifestyle fallback style | A bundled placeholder image style, used by the hero section when no image has been chosen for it yet. See [Images and video](images-and-video.md#lifestyle-fallback-images). |
+| Lifestyle fallback style | A bundled placeholder image style (Nordic, Classic, Elegant or None), used by the hero section when no image has been chosen for it yet. See [Images and video](images-and-video.md#lifestyle-fallback-images). |
 
 ## Light colour palette / Dark colour palette
 
@@ -113,6 +113,10 @@ are shown in uppercase.
 | Show quick add for single-variant products | Shows a quick add-to-cart control on cards, for products with only one variant. |
 | Show currency codes | Adds the three-letter currency code (for example, USD) next to prices. |
 
+Product cards with more than one image show the second image when a shopper
+hovers over the card or moves keyboard focus to it, so a lifestyle or back view is one glance away. Put the
+image you want shown on hover second in the product's media list.
+
 ## Motion
 
 | Setting | What it does |
@@ -131,6 +135,13 @@ own SEO fields on each product, collection, page and article (under
 **Edit website SEO** when editing that item). Shopify also generates
 hreflang tags, `sitemap.xml` and `robots.txt` automatically; none of that is
 configured here.
+
+The theme adds the rest automatically, with nothing to set up: structured
+data (schema.org) for your organisation, site search, breadcrumbs, products
+with their price, availability and brand, collections and blog articles, so
+search engines can show rich results; and Open Graph and X card tags, so
+links shared on social media and messaging apps show a title, description
+and image.
 
 | Setting | What it does |
 | --- | --- |

@@ -29,9 +29,14 @@ content position, text alignment, and desktop and mobile height.
 
 Set **Heading level** to H1 only for the primary hero on your homepage; use
 H2 for any other hero elsewhere on the page or site, since a page should
-have one H1. If no image is chosen, the hero falls back to a bundled
-lifestyle image based on your **Lifestyle fallback style** theme setting; see
-[Images and video](images-and-video.md).
+have one H1. **Text colour** sets the colour of the text over the image;
+check it stays readable against your image and overlay.
+
+If no image is chosen and **Use theme-style lifestyle image when blank** is
+on (the default), the hero shows a bundled lifestyle image based on your
+**Lifestyle fallback style** theme setting; see
+[Images and video](images-and-video.md#lifestyle-fallback-images). Turn it
+off to show the hero with no image instead.
 
 ### Rich text
 
@@ -48,39 +53,45 @@ image positioned left or right.
 
 ### Multicolumn
 
-Up to 6 columns, each an image or icon (choose from a small built-in icon
-set, or none), a heading, text and an optional link. Good for feature
-callouts, service promises, or a benefits row. Background works the same as
-rich text: background, surface, or alternative surface.
+Up to 6 columns, each an image or icon (check, sun, basket, person, or
+none), a heading, text and an optional link. The section itself has an
+optional eyebrow, heading and description above the columns. Good for
+feature callouts, service promises, or a benefits row. Background works the
+same as rich text: background, surface, or alternative surface.
 
 ### Collection list
 
-A grid of up to 8 collection cards. Each block picks a collection, and can
-override its image and title for the card without changing the collection
-itself. Grid size (compact, standard or spacious) and an optional "view all"
-link are set on the section.
+A grid of up to 8 collection cards, with an optional eyebrow and heading.
+Each block picks a collection, and can override its image and title for the
+card without changing the collection itself. Grid size (compact, standard or
+spacious) and an optional "view all" link are set on the section.
 
 ### Featured collection
 
-Pulls products from one collection you choose, showing 2 to 12 of them.
-Grid size and a small-screen layout choice (dynamic, one column, or two
-columns) control how the grid responds on narrower screens; the grid also
-adapts automatically to the width of whatever container it's in. Includes an
-optional "view all" link to the full collection.
+Pulls products from one collection you choose, showing 2 to 12 of them,
+under an optional eyebrow, heading and description. Grid size and a
+small-screen layout choice (dynamic, one column, or two columns) control how
+the grid responds on narrower screens; the grid also adapts automatically to
+the width of whatever container it's in. Includes an optional "view all" link
+to the full collection, and the same background choice as rich text.
 
 ### Testimonials
 
-Merchant-entered customer quotes, up to 6 per section. Each testimonial block
-has an optional photo, a star rating (set to 0 to hide it), a quote, a name
-and a role or location. Useful for social proof with no review app
-installed, since Shopify has no store-level review feature of its own for a
-theme to draw from.
+Merchant-entered customer quotes, up to 6 per section, under an optional
+eyebrow, heading and description, with the same background choice as rich
+text. Each testimonial block has an optional photo, a star rating (set to 0
+to hide it), a quote, a name and a role or location. Useful for social
+proof with no review app installed, since Shopify has no store-level review
+feature of its own for a theme to draw from.
 
 ### Trust row
 
 A row of up to 5 short trust signals (free delivery, returns, guarantee,
-secure checkout, and so on), each an icon and a line of text. Leave a block's
-text blank to hide that item without deleting it.
+secure checkout, and so on), each an icon and a line of text, with the same
+background choice as rich text. Leave a block's text blank to hide that item
+without deleting it. The product page has its own **Trust row** block with
+four fixed items, covered in
+[Products and collections](products-and-collections.md#the-product-page).
 
 ### Newsletter
 
@@ -93,15 +104,15 @@ A simple contact form with an eyebrow, heading, body text and Shopify's
 built-in contact form. An optional phone field can be added, and the heading
 can be centred.
 
-### Collapsible content blocks (flexible blocks)
+### Flexible blocks
 
 A general-purpose container section that accepts theme blocks and app
 blocks, useful for building an FAQ, a spec sheet, or any layout not covered
 by a dedicated section. Content width can be set to narrow, standard or full.
 The theme blocks available here include:
 
-- **Metafield accordion**: a collapsible accordion built from product
-  metafields or static content, covered in
+- **Metafield accordion**: a collapsible accordion built from metafields
+  or static content, covered in
   [Products and collections](products-and-collections.md#specification-accordions).
 - **Map**: an embedded Google Map with an address and directions link,
   covered below.
@@ -136,15 +147,6 @@ A dedicated slot for app blocks (`@app`), with an option to allow app content
 to run full width. Add this section anywhere you want an app's embedded
 content to appear, then add the app's own block inside it from the block
 list.
-
-### Theme demo grid
-
-A gallery-style section that links out to other example storefronts, useful
-if you'd like to show visitors (or yourself, while deciding) what the
-theme's other presets look like. Each **style** block is a heading,
-description, image and a link, either to another unpublished theme via its
-preview theme ID or to any custom URL. Most stores won't need this section;
-it exists for cases like a marketing or landing page that compares looks.
 
 ## Utility and legal sections
 
