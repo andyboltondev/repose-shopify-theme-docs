@@ -5,8 +5,9 @@
 The main product section (**Product information**) is built entirely from
 blocks, so you can add, remove and reorder almost everything on the page:
 vendor, title, rating, trust row, price, variant picker, quantity selector,
-buy buttons, description, collapsible rows (accordions), share links, a map,
-custom Liquid, and app blocks. Add, remove and reorder them from the theme
+buy buttons, description, collapsible rows (accordions), a size chart,
+shipping and delivery information, share links, a map, custom Liquid, and app
+blocks. Add, remove and reorder them from the theme
 editor to change the page's structure without touching code.
 
 A few blocks have settings worth knowing about:
@@ -14,9 +15,16 @@ A few blocks have settings worth knowing about:
 - **Buy buttons**: **Show dynamic checkout button** adds Shop Pay, Apple Pay
   or another accelerated checkout button under add to cart, depending on the
   payment methods you have enabled.
+- **Price**: shows the price and any sale price. It also has an optional
+  low stock counter; see [Low stock counter](#low-stock-counter).
 - **Collapsible row**: a heading with either rich text or the content of a
-  page you choose, so shared text such as a delivery policy is written once
-  and reused on every product.
+  page you choose, so shared text such as a returns policy is written once
+  and reused on every product. Collapsible rows are gathered into one group
+  beneath the product photos and details, however many you add. To fill a
+  row from a product's own details instead, see
+  [Specification accordions](#specification-accordions).
+- **Size chart** and **Shipping & delivery**: see
+  [Size chart](#size-chart) and [Shipping and delivery](#shipping-and-delivery).
 - **Trust row**: up to four short reassurances (delivery, returns, guarantee,
   secure checkout), each an icon and a line of text. Leave an item's text
   blank to hide it.
@@ -54,16 +62,90 @@ with pinch-to-zoom and swipe) and a keyboard path (open with Enter, pan with
 arrow keys, close with Escape). Video and 3D model media aren't affected by
 the zoom style; they play or rotate in place instead.
 
-### Keeping details visible while scrolling
+### Product videos
 
-**Keep product details visible while scrolling** (desktop only) keeps the
-title, price and buy buttons in view beside a tall gallery, instead of
-scrolling past them.
+Add a video to a product in Shopify admin (**Products > select product >
+Add media**) and it appears in the gallery with the product's images, with
+its own thumbnail. Videos uploaded to Shopify show a still picture with a play
+button. When a shopper presses play, the video opens larger, over the product
+details beside it, rather than squeezed into the photo area, with a close
+button in the corner; pressing it (or the video ending, or choosing another
+thumbnail) puts everything back. Videos always fill their frame, whatever
+**Gallery media fit** is set to. Turn on **Show gallery thumbnails** if your
+gallery has a video, so shoppers can jump straight to it. Videos from YouTube
+or Vimeo play in place using the platform's own player.
+
+### Keeping things visible while scrolling
+
+**Sticky column** (desktop only) keeps one half of the product page in view
+while the other half scrolls past, so a shopper never loses sight of what
+they're buying. Choose:
+
+- **Gallery** (the default): the photos stay put while a long description
+  scrolls beside them.
+- **Product details**: the title, price and buy buttons stay put beside a tall
+  gallery of photos.
+- **None**: both columns scroll normally.
+
+On phones and tablets the page always scrolls normally.
 
 **Show a sticky add to cart bar while scrolling** shows a slim add-to-cart
 bar once the buy buttons block scrolls out of view, so the buy button is
 always reachable. This requires a buy buttons block to be present in the
 section; without one, there's nothing for it to track.
+
+### Low stock counter
+
+Turn on **Show a low stock counter** in the **Price** block to show a line
+such as "Only 3 left in stock" under the price. It appears only when the
+selected variant's inventory is tracked by Shopify and has fallen to the
+**Low stock threshold** you choose (1 to 20, five by default) or below, and it
+updates as shoppers switch variants. It never appears for products that don't
+track inventory (check **Track quantity** on the variant in Shopify admin) or
+that are comfortably in stock.
+
+### Size chart
+
+The **Size chart** block adds a **Size guide** link beside the variant picker
+(or a collapsible row, if you choose that style). Fill it with:
+
+- **Content**: rich text, written once for this product. Rich text supports
+  headings, lists, bold and links, but not tables.
+- **Page**: choose a page from **Online Store > Pages** to reuse one size
+  guide on every product. A page can hold a table of measurements, which is
+  the best way to show a proper size chart.
+
+If you fill in both, the two are shown together. **Display style** chooses
+between a **Popup** window and a **Collapsible row**, and **Link text**
+renames the link (the default is "Size guide"). The block appears only on
+products that have a size option (any option whose name contains "size", such
+as Size, Ring size or Shoe size), so you can leave it in your template and
+products without sizes simply won't show it.
+
+### Shipping and delivery
+
+The **Shipping & delivery** block gives shoppers delivery information on the
+product page without leaving it. It can show, in order:
+
+- a **Delivery estimate** you type, such as "Order within 2 hours for
+  next-day delivery";
+- the free delivery amount, when **Show the free delivery threshold** is on
+  (taken from [Theme settings > Basket and checkout](theme-settings.md#basket-and-checkout),
+  and hidden if that bar is off or set to 0);
+- your own **Content** and/or a shared **Page**.
+
+If you leave content and page empty, the block links to your store's shipping
+policy (from **Settings > Policies**) instead, so it's never blank. Like the
+size chart, **Display style** chooses a **Popup** or a **Collapsible row**,
+and **Heading** renames it.
+
+### Option buttons
+
+Each option's values appear as buttons (or swatches, for colour-type options;
+see below). When every value of an option is a single character, as with ring
+sizes (I, J, K and so on), the buttons are drawn as neat circles. Options with
+longer values, such as S, M, L or 6, 8, 10, 12, keep the usual rounded
+rectangle.
 
 ### Colour swatches
 
@@ -159,7 +241,7 @@ rating shown on product cards throughout the store.
 
 The **Metafield accordion** theme block, added inside a **Flexible blocks**
 section (the default product template has one below the product
-information), builds an accordion from metafields, useful for
+information and its collapsible rows), builds an accordion from metafields, useful for
 specifications, care instructions or sizing details without retyping them
 into a rich text block for every product. It is built in three levels:
 
@@ -210,6 +292,33 @@ The cart drawer, minicart and cart page also suggest up to four
 complementary products for the first item in the cart, from the same
 Search & Discovery pairings. With no pairings, nothing is shown.
 
+### Quick view
+
+With **Enable quick view** on (the default, under
+[Theme settings > Cards](theme-settings.md#cards)), every product card shows a
+small eye button. It opens the product in a pop-up window with the photos,
+price, option pickers, quantity and an **Add to cart** button, plus a **View
+full details** link to the product's own page. Shoppers can choose a variant
+and buy without leaving the collection or search results they were browsing,
+and the page behind them stays exactly where it was. The window can be
+closed with its close button or <kbd>Escape</kbd>.
+
+### Recently viewed products
+
+The **Recently viewed products** section shows the products a shopper has
+looked at lately, newest first, so they can find their way back. Add it from
+**Add section** below the main product section (the default product
+templates already include it below the recommendations) or on the home page.
+It has a **Heading**, **Products to show** (2 to 8) and **Product size**.
+
+The history is kept in the shopper's own browser, not on your store or in
+their account, so it works for logged-out visitors, is private to each
+device, and clears if they clear their browser data. The product currently
+being viewed is left out, and the whole section stays hidden until a visitor
+has looked at at least one other product, so a first-time visitor never sees
+an empty heading. Products you later delete or hide disappear from the list
+automatically.
+
 ## Alternate templates
 
 Some page types have more than one template available, giving you a
@@ -245,9 +354,22 @@ The **Collection products** section controls:
 | Show collection image | Shows the collection's banner image. |
 | Enable filtering | Turns on the filter panel (facets), built from your store's product options, tags, availability, price, and other filterable properties, powered by Shopify's native filtering. |
 | Enable sorting | Turns on the sort dropdown. |
-| Products per page | How many products load per page. |
+| Products per page | How many products load at a time. |
+| Load more products automatically while scrolling | Infinite scroll. See below. On by default. |
 | Product size | Compact, standard or spacious grid density. The grid also adapts automatically to the width of the product area, including when filters are visible. |
 | Small-screen layout | Dynamic, one column, or two columns, for narrow viewports. |
+
+### Infinite scroll
+
+With **Load more products automatically while scrolling** on, shoppers don't
+have to click through numbered pages. A **Load more products** button sits
+below the grid, and the next batch of products is added to the page by itself
+as the shopper nears the bottom (the button also works if they click it).
+Filters and sorting keep working, and the **Back** button from a product page
+returns to the same place in the list. Shoppers whose browsers have
+JavaScript turned off, and search engines, still get ordinary numbered page
+links, so every product stays reachable. Turn the setting off to use numbered
+pages only.
 
 The **Collection list page** section (the page listing all your
 collections) has similar grid density controls, plus a heading and a colour

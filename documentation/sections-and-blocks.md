@@ -93,6 +93,19 @@ without deleting it. The product page has its own **Trust row** block with
 four fixed items, covered in
 [Products and collections](products-and-collections.md#the-product-page).
 
+### Recently viewed products
+
+Shows the products the visitor has looked at most recently, so they can find
+their way back. It works best on product pages and the home page. Its
+settings, and how it remembers products, are covered in
+[Products and collections](products-and-collections.md#recently-viewed-products).
+
+### Product recommendations
+
+Suggests other products, either automatically related ones or pairings you
+choose yourself. It's usually placed on product pages; see
+[Products and collections](products-and-collections.md#product-recommendations).
+
 ### Newsletter
 
 An email signup form with an eyebrow, heading and text, connected to
@@ -181,7 +194,9 @@ sections (login, register, account, addresses, order, activate account,
 reset password) render Shopify's standard customer account flows styled to
 match the rest of the theme, and have no settings of their own beyond what
 Shopify's own customer account configuration provides in
-**Settings > Customer accounts**.
+**Settings > Customer accounts**. The login and registration sections also
+accept app blocks, which is where the **Sign in with Shop** button is added;
+see [Customer accounts](navigation-and-menus.md#customer-accounts).
 
 ## Gift cards
 

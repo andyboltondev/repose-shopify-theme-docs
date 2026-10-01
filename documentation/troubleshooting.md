@@ -19,6 +19,67 @@ switch the section's **Recommendation type** to **Related products**
 instead. See
 [Products and collections](products-and-collections.md#product-recommendations).
 
+## The Sign in with Shop button isn't on the login page
+
+The button comes from Shopify, not the theme. You need the **Shop** sales
+channel installed and Shop Pay activated in **Settings > Payments**, and the
+**Sign in with Shop** app block added to the login (and registration) page
+in the theme editor. Also check that **Account sign-in** in
+[Theme settings > Customer accounts](theme-settings.md#customer-accounts) is
+set to **Sign in with Shop**. See
+[Customer accounts](navigation-and-menus.md#customer-accounts).
+
+## There's no account icon in the header
+
+The icon needs customer accounts turned on in **Settings > Customer
+accounts** in Shopify admin, and **Show account link** on in the Header
+section. See [Customer accounts](navigation-and-menus.md#customer-accounts).
+
+## Search suggestions aren't appearing as I type
+
+Check that **Enable predictive search** is on in
+[Theme settings > Search](theme-settings.md#search). Suggestions only appear
+once the shopper has typed a word that matches something in your store.
+
+## The size guide link isn't showing on a product
+
+The **Size chart** block only appears on products that have an option with
+"size" in its name (Size, Ring size, Shoe size and so on). Check that the product has such an
+option, and that the block is in your product template. If the pop-up opens
+but is empty, fill in the block's **Content** or **Page**. See
+[Size chart](products-and-collections.md#size-chart).
+
+## The "Only a few left in stock" message isn't showing
+
+It appears only when the **Show a low stock counter** setting is on in the
+product's **Price** block, Shopify is tracking inventory for that variant
+(**Track quantity** on the variant), and the quantity left is at or below the
+**Low stock threshold**. Products that are well stocked, or that don't track
+inventory, never show it. See
+[Low stock counter](products-and-collections.md#low-stock-counter).
+
+## "Recently viewed" isn't showing any products
+
+The section is hidden until a visitor has looked at at least one other
+product, and it only remembers products in that one browser. Visit two
+products in a normal browser window and then a third, and the first two
+should appear. Private windows and cleared browser data start from empty.
+See [Recently viewed products](products-and-collections.md#recently-viewed-products).
+
+## The quick view eye button isn't on product cards
+
+Turn on **Enable quick view** in
+[Theme settings > Cards](theme-settings.md#cards). See
+[Quick view](products-and-collections.md#quick-view).
+
+## The collection shows numbered pages instead of loading more automatically
+
+**Load more products automatically while scrolling** is a setting on the
+Collection products section, and is separate for the search results page,
+which always uses numbered pages. Numbered pages are also what shoppers see
+when JavaScript is turned off. See
+[Infinite scroll](products-and-collections.md#infinite-scroll).
+
 ## The mega menu isn't appearing, just a regular dropdown
 
 The wider mega menu layout only appears when a menu item has three levels:

@@ -60,6 +60,28 @@ shipping discount or a free shipping rate: set that up in
 **Settings > Shipping and delivery**, matching the same threshold you enter
 here.
 
+## Search
+
+| Setting | What it does |
+| --- | --- |
+| Enable predictive search | Shows suggestions as a shopper types, before they press Enter: matching search phrases, products (with image and price), and collections, pages and articles. Turn it off if you'd rather shoppers go straight to the results page. |
+
+This one setting covers both the header's search dialog and the search box on
+the search results page. Searching still works the same way with it off. See
+[Search](navigation-and-menus.md#search) for how shoppers use it.
+
+## Customer accounts
+
+| Setting | What it does |
+| --- | --- |
+| Account sign-in | **Sign in with Shop** (the default) uses Shopify's own sign-in: shoppers log in without a password and get an account menu in the header. **Classic login** uses the theme's own login page, and suits stores still on Shopify's legacy customer accounts. |
+
+The account icon only appears when customer accounts are turned on in
+**Settings > Customer accounts** in Shopify admin, and when **Show account
+link** is on in the Header section. See
+[Customer accounts](navigation-and-menus.md#customer-accounts) for what each
+option looks like and how to set it up.
+
 ## Typography
 
 Fonts are chosen from Shopify's font library (system, web-safe and Google
@@ -95,6 +117,10 @@ fixed column count. Minimum and maximum width sliders for product cards and
 collection cards control that range, so cards don't become too cramped on
 narrow screens or too large on wide ones.
 
+| Setting | What it does |
+| --- | --- |
+| Show a back to top button | Shows a small round arrow button in the corner of the screen once a shopper has scrolled down the page. Clicking it scrolls smoothly back to the top (instantly for shoppers who have asked their device for reduced motion). On by default. |
+
 ## Buttons and forms
 
 Controls the shape and size of buttons and form fields storewide: button
@@ -112,6 +138,7 @@ are shown in uppercase.
 | Show variant summaries on product cards | Shows a short summary of variant options (such as available colours) on the card. |
 | Show quick add for single-variant products | Shows a quick add-to-cart control on cards, for products with only one variant. |
 | Show currency codes | Adds the three-letter currency code (for example, USD) next to prices. |
+| Enable quick view | Adds a small eye button to each product card. It opens the product in a pop-up window, so shoppers can pick options and add to cart without leaving the page. On by default. See [Quick view](products-and-collections.md#quick-view). |
 
 Product cards with more than one image show the second image when a shopper
 hovers over the card or moves keyboard focus to it, so a lifestyle or back view is one glance away. Put the

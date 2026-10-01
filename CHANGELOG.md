@@ -40,18 +40,28 @@ before the rule is all shoppers and screen readers receive.
 
 **Collections and search.** Shopify's native filtering and sorting on both
 collection and search pages, badges for sale, sold-out, pre-order and
-back-order products, optional quick add on product cards, a second image on
-hover, and an editorial collection template.
+back-order products, optional quick add and quick view on product cards, a
+second image on hover, "Load more" infinite scrolling on collections, search
+suggestions as shoppers type, and an editorial collection template.
+
+**More product page tools.** A size chart pop-up or collapsible row (shown only
+on products with a size option), a shipping and delivery block with a delivery
+estimate and the free delivery amount, an optional low stock counter, product
+videos that play larger over the page, a choice of which column stays in view
+while scrolling, a recently viewed products section, and ring sizes drawn as
+neat circles.
 
 **Cart.** A slide-out cart drawer (or a compact minicart, or straight to the
 cart page) with complementary product recommendations, a free shipping
 progress bar, an order note and accelerated checkout.
 
-**Navigation.** A three-level mega menu, a nested mobile menu, a sticky header,
-an announcement bar and a search dialog.
+**Navigation.** A three-level mega menu, a nested mobile menu with an optional
+two-column footer link list, a sticky header, an announcement bar, a search
+dialog and a back to top button.
 
-**Pages.** About, FAQ, landing, sitemap and contact page templates, plus a
-full set of customer account pages.
+**Pages and accounts.** About, FAQ, landing, sitemap and contact page
+templates, plus a full set of customer account pages. Choose between Sign in
+with Shop and classic login, with an account menu in the header either way.
 
 **International.** Country or region and language selectors, and translations
 for English, French, German, Italian and Spanish.

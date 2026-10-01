@@ -12,8 +12,12 @@ still depends on choices you make.
   gallery, can be reached and operated with a keyboard alone, with a visible
   focus outline at every stop.
 - **Dialogs behave correctly.** The search dialog, cart drawer and minicart,
-  and the product image lightbox all trap focus while open, return focus to
+  quick view, size chart and shipping pop-ups, and the product image lightbox
+  all trap focus while open, return focus to
   whatever opened them when closed, and close on <kbd>Escape</kbd>.
+- **Search suggestions work from the keyboard.** Predictive search
+  suggestions can be moved through with the arrow keys and chosen with
+  <kbd>Enter</kbd>, and are announced to screen readers as options in a list.
 - **Live updates are announced.** Cart changes (adding, updating or removing
   an item) and filter changes on collection and search pages are announced
   to screen readers through a live region, not just shown visually.

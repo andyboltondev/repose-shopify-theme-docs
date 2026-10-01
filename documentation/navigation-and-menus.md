@@ -10,7 +10,7 @@ Its settings:
 | Menu | Which Shopify navigation menu to display. Build or edit this menu under **Online Store > Navigation**. |
 | Enable sticky header | Keeps the header visible while a visitor scrolls down the page. |
 | Show search | Adds a search icon that opens a search dialog. |
-| Show account link | Adds an account icon, shown only when customer accounts are enabled in **Settings > Customer accounts**. |
+| Show account link | Adds an account icon, shown only when customer accounts are enabled in **Settings > Customer accounts**. What it does when clicked depends on the **Account sign-in** theme setting; see [Customer accounts](#customer-accounts). |
 | Cart icon action | What clicking the cart icon does: open a full cart drawer, open a small minicart popup, or go straight to the cart page. |
 
 ### Menu depth and the mega menu
@@ -36,6 +36,40 @@ When **Show search** is on, the search icon opens a dialog with a single
 search field, submitting to Shopify's native storefront search. Search
 results respect the same filtering and sorting settings as collection pages;
 see [Products and collections](products-and-collections.md#search-results).
+
+**Predictive search.** With **Enable predictive search** on (the default, in
+[Theme settings > Search](theme-settings.md#search)), a panel of suggestions
+appears under the search field as a shopper types: matching search phrases,
+products with their image and price, and any matching collections, pages and
+articles. Shoppers can click a suggestion, or move through them with the
+up and down arrow keys and press <kbd>Enter</kbd> to open one. Pressing
+<kbd>Enter</kbd> without choosing a suggestion goes to the full results page,
+and the same suggestions appear in the search box on the results page. Turn
+the setting off and the field becomes a plain search box.
+
+### Customer accounts
+
+The account icon in the header (and the **Account** button in the mobile
+menu) is shown when two things are true: customer accounts are turned on in
+**Settings > Customer accounts** in Shopify admin, and **Show account link**
+is on in the Header section. What shoppers see then depends on **Account
+sign-in** in [Theme settings > Customer accounts](theme-settings.md#customer-accounts):
+
+- **Sign in with Shop** (the default). Shopify's own sign-in. Shoppers sign
+  in without a password, and once signed in the icon opens Shopify's account
+  menu. This is the option to choose if your
+  store uses Shopify's current customer accounts.
+- **Classic login**. The icon links to the theme's own login page, where
+  shoppers sign in with an email and password. Once signed in, the icon opens
+  a small menu with **Account**, **Addresses** and **Sign out** (an expanding
+  list in the mobile menu), so shoppers can get to their details from any
+  page.
+
+To add Shopify's **Sign in with Shop** button to the login and registration
+pages themselves, install the **Shop** sales channel, activate Shop Pay in
+**Settings > Payments**, then in the theme editor open the login or
+registration page and add the **Sign in with Shop** app block. Without those
+steps the button simply doesn't appear; nothing is broken.
 
 ### Colour mode switcher
 
@@ -73,6 +107,9 @@ The footer section includes your store description (or Shopify's store
 description if left blank), social links, and up to 4 additional blocks:
 **Menu** (a heading and a Shopify navigation menu) or **Text** (a heading and
 rich text), useful for opening hours, contact details, or extra link groups.
+A **Menu** block has a **Split into two columns** option, which lays a long
+list of links out in two columns instead of one tall one. It takes effect on
+wider screens and is off by default.
 
 | Setting | What it does |
 | --- | --- |
@@ -82,6 +119,13 @@ rich text), useful for opening hours, contact details, or extra link groups.
 | Show language selector | A dropdown for switching between storefront languages. Only appears when your store has more than one published language in **Settings > Languages**. |
 | Show payment icons | Shows icons for the payment methods enabled in your store. |
 | Show policy links | Links to whichever store policies you've published in **Settings > Policies** (refund, privacy, terms, and so on). |
+
+## Back to top button
+
+A small round arrow button appears in the corner of the screen once a
+shopper has scrolled a little way down any page, and takes them smoothly back
+to the top when pressed. Turn it off with **Show a back to top button** in
+[Theme settings > Layout](theme-settings.md#layout).
 
 ## Breadcrumbs
 
