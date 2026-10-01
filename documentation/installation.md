@@ -43,6 +43,14 @@ With a preset chosen, a sensible order to work through is:
    catalogue, and look at the alternate templates if a specific product or
    collection needs a different layout. See
    [Products and collections](products-and-collections.md).
+6. **Customer accounts and search**: choose how shoppers sign in under
+   **Theme settings > Customer accounts** (see
+   [Customer accounts](navigation-and-menus.md#customer-accounts)), and decide
+   whether you want search suggestions as people type under
+   **Theme settings > Search**.
+7. **Check it on a phone.** Most shoppers will use one. Use the preview's
+   device buttons in the theme editor, then look at the finished store on a
+   real phone.
 
 ## Languages
 
